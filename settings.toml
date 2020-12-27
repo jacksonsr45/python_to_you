@@ -4,7 +4,13 @@ TITLE = "Python To You"
 SECRET_KEY = "jadkfbsdkjbfbh"
 
 EXTENSIONS = [
-    "python_to_you.extensions.appearance"
+    # Load all external dependencies for this project
+    "python_to_you.extensions.appearance",
+
+    # Load all internal dependencies for this project 
+    "python_to_you.blueprints.web",
+    "python_to_you.blueprints.api",
+    "python_to_you.blueprints.auth"
 ]
 
 [production]

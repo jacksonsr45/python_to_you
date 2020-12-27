@@ -1,0 +1,11 @@
+[default]
+SQLALCHEMY_DATABASE_URI = 'mysql://root:Jackson192032J@c@localhost/python_to_you'
+TITLE = "Python To You"
+SECRET_KEY = "jadkfbsdkjbfbh"
+
+EXTENSIONS = [
+    "python_to_you.extensions.appearance"
+]
+
+[production]
+SQLALCHEMY_DATABASE_URI = 'mysql:///test.db'

@@ -1,0 +1,145 @@
+
+# Criado por https://www.toptal.com/developers/gitignore/api/python
+# Edite em https://www.toptal.com/developers/gitignore?templates=python
+
+### Pitão ###
+# Arquivos compilados por byte / otimizados / DLL
+__pycache __ /
+* .py [cod]
+* $ py.class
+
+# Extensões C
+*.então
+
+# Distribuição / embalagem
+.Pitão
+Construir/
+ovos de desenvolvimento /
+dist /
+Transferências/
+ovos/
+.ovos/
+lib /
+lib64 /
+partes /
+sdist /
+var /
+rodas /
+pip-wheel-metadata /
+compartilhar / rodas-python /
+* .egg-info /
+.installed.cfg
+*.ovo
+MANIFESTO
+
+# PyInstaller
+# Normalmente, esses arquivos são escritos por um script Python a partir de um modelo
+# antes de PyInstaller construir o exe, para injetar data / outras informações nele.
+*.manifesto
+* .spec
+
+# Registros do instalador
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Relatório de teste / cobertura de unidade
+htmlcov /
+.tox /
+.nox /
+.cobertura
+.cobertura.*
+.cache
+nosetests.xml
+cobertura.xml
+*.cobrir
+* .py, capa
+.hipótese/
+.pytest_cache /
+pytestdebug.log
+
+# Traduções
+* .mo
+*.Panela
+
+# Coisas do Django:
+*.registro
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Material do frasco:
+instância/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Documentação Sphinx
+docs / _build /
+doc / _build /
+
+# PyBuilder
+alvo/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default /
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+# De acordo com pypa / pipenv # 598, é recomendado incluir Pipfile.lock no controle de versão.
+# No entanto, em caso de colaboração, se houver dependências ou dependências específicas da plataforma
+# sem suporte multiplataforma, o pipenv pode instalar dependências que não funcionam ou não
+# instale todas as dependências necessárias.
+# Pipfile.lock
+
+# PEP 582; usado por exemplo github.com/David-OConnor/pyflow
+__pypackages __ /
+
+# Coisas de aipo
+celerybeat-cronograma
+celerybeat.pid
+
+# SageMath arquivos analisados
+* .sage.py
+
+# Ambientes
+.env
+.venv
+env /
+venv /
+ENV /
+env.bak /
+venv.bak /
+pythonenv *
+
+# Configurações do projeto Spyder
+.spyderproject
+.spyproject
+
+# Configurações do projeto de corda
+.ropeproject
+
+# documentação mkdocs
+/local
+
+# mypy
+.mypy_cache /
+.dmypy.json
+dmypy.json
+
+# Verificador de tipo de pira
+.pyre /
+
+# pytype analisador de tipo estático
+.pytype /
+
+# dados de perfil
+.prof
+
+# Fim de https://www.toptal.com/developers/gitignore/api/python

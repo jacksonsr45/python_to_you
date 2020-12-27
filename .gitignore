@@ -1,145 +1,145 @@
 
-# Criado por https://www.toptal.com/developers/gitignore/api/python
-# Edite em https://www.toptal.com/developers/gitignore?templates=python
+# Created by https://www.toptal.com/developers/gitignore/api/python
+# Edit at https://www.toptal.com/developers/gitignore?templates=python
 
-### Pitão ###
-# Arquivos compilados por byte / otimizados / DLL
-__pycache __ /
-* .py [cod]
-* $ py.class
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
 
-# Extensões C
-*.então
+# C extensions
+*.so
 
-# Distribuição / embalagem
-.Pitão
-Construir/
-ovos de desenvolvimento /
-dist /
-Transferências/
-ovos/
-.ovos/
-lib /
-lib64 /
-partes /
-sdist /
-var /
-rodas /
-pip-wheel-metadata /
-compartilhar / rodas-python /
-* .egg-info /
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
 .installed.cfg
-*.ovo
-MANIFESTO
+*.egg
+MANIFEST
 
 # PyInstaller
-# Normalmente, esses arquivos são escritos por um script Python a partir de um modelo
-# antes de PyInstaller construir o exe, para injetar data / outras informações nele.
-*.manifesto
-* .spec
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
 
-# Registros do instalador
+# Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
 
-# Relatório de teste / cobertura de unidade
-htmlcov /
-.tox /
-.nox /
-.cobertura
-.cobertura.*
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
 .cache
 nosetests.xml
-cobertura.xml
-*.cobrir
-* .py, capa
-.hipótese/
-.pytest_cache /
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
 pytestdebug.log
 
-# Traduções
-* .mo
-*.Panela
+# Translations
+*.mo
+*.pot
 
-# Coisas do Django:
-*.registro
+# Django stuff:
+*.log
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
 
-# Material do frasco:
-instância/
+# Flask stuff:
+instance/
 .webassets-cache
 
 # Scrapy stuff:
 .scrapy
 
-# Documentação Sphinx
-docs / _build /
-doc / _build /
+# Sphinx documentation
+docs/_build/
+doc/_build/
 
 # PyBuilder
-alvo/
+target/
 
 # Jupyter Notebook
 .ipynb_checkpoints
 
 # IPython
-profile_default /
+profile_default/
 ipython_config.py
 
 # pyenv
 .python-version
 
 # pipenv
-# De acordo com pypa / pipenv # 598, é recomendado incluir Pipfile.lock no controle de versão.
-# No entanto, em caso de colaboração, se houver dependências ou dependências específicas da plataforma
-# sem suporte multiplataforma, o pipenv pode instalar dependências que não funcionam ou não
-# instale todas as dependências necessárias.
-# Pipfile.lock
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
+#Pipfile.lock
 
-# PEP 582; usado por exemplo github.com/David-OConnor/pyflow
-__pypackages __ /
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow
+__pypackages__/
 
-# Coisas de aipo
-celerybeat-cronograma
+# Celery stuff
+celerybeat-schedule
 celerybeat.pid
 
-# SageMath arquivos analisados
-* .sage.py
+# SageMath parsed files
+*.sage.py
 
-# Ambientes
+# Environments
 .env
 .venv
-env /
-venv /
-ENV /
-env.bak /
-venv.bak /
-pythonenv *
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+pythonenv*
 
-# Configurações do projeto Spyder
+# Spyder project settings
 .spyderproject
 .spyproject
 
-# Configurações do projeto de corda
+# Rope project settings
 .ropeproject
 
-# documentação mkdocs
-/local
+# mkdocs documentation
+/site
 
 # mypy
-.mypy_cache /
+.mypy_cache/
 .dmypy.json
 dmypy.json
 
-# Verificador de tipo de pira
-.pyre /
+# Pyre type checker
+.pyre/
 
-# pytype analisador de tipo estático
-.pytype /
+# pytype static type analyzer
+.pytype/
 
-# dados de perfil
+# profiling data
 .prof
 
-# Fim de https://www.toptal.com/developers/gitignore/api/python
+# End of https://www.toptal.com/developers/gitignore/api/python

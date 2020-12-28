@@ -9,7 +9,11 @@ from flask import Flask
 # @return Flask app
 # #
 def minimal_app():
-    app = Flask(__name__)
+    app = Flask(
+            __name__, 
+            template_folder="blueprints/templates",
+            static_folder="blueprints/static"
+        )
     configuration.init_app(app)
     return app
 
@@ -23,4 +27,4 @@ def minimal_app():
 def create_app():
     app = minimal_app()
     configuration.load_extensions(app)
-    return app
+    return app 

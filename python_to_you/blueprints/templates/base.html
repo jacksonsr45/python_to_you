@@ -1,0 +1,39 @@
+<!doctype html>
+{% block head %}
+    
+    {% if title %}
+        <title>{{ config.get('TITLE') }} - {{ title }}</title>
+    {% else %}
+        <title>{{ config.get('TITLE') }}</title>
+    {% endif %}
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+<nav>
+    {% block navbar %}
+        <div class="topnav" id="myTopnav">
+            <a href="/">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="handleNavBar()">
+                <img class="hamburger_icon" src="{{ url_for('static', filename='img/hamburger_icon.svg') }}">
+            </a>
+        </div>   
+    {% endblock %}
+</nav>
+<section class="content">
+    {% block content %}
+
+    {% endblock %}
+        
+    {% block scripts %}
+        <script src="{{ url_for('static', filename='js/jquery.min.js') }}" defer></script>
+        <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}" defer></script>    
+        <script src="{{ url_for('static', filename='js/topnavbar.js') }}" defer></script>
+    {% endblock %}
+</section>
+
+
+

@@ -5,13 +5,15 @@ SECRET_KEY = "jadkfbsdkjbfbh"
 
 EXTENSIONS = [
     # Load all external dependencies for this project
-    "python_to_you.extensions.appearance",
+    "python_to_you.extensions.database",
+    "python_to_you.extensions.navbar",
 
     # Load all internal dependencies for this project 
     "python_to_you.blueprints.web",
     "python_to_you.blueprints.api",
     "python_to_you.blueprints.auth"
 ]
+
 
 [production]
 SQLALCHEMY_DATABASE_URI = 'mysql:///test.db'

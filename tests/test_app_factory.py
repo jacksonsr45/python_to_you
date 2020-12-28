@@ -1,9 +1,9 @@
 from flask.app import Flask
-from tests.flask_base_test_case import FlaskBaseTestCase
+from unittest import TestCase
 from python_to_you import app
 
 
-class TestAppFactory(FlaskBaseTestCase):
+class TestAppFactory(TestCase):
     def test_if_has_in_app_a_minimal_app(self):
         self.assertEqual(
             hasattr(app, 'minimal_app'),

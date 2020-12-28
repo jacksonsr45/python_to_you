@@ -12,7 +12,7 @@
 {% endblock %}
 <nav>
     {% block navbar %}
-        <div class="topnav" id="myTopnav">
+        <div class="topnav" id="navbar_top">
             <a href="/">Home</a>
             <a href="#news">News</a>
             <a href="#contact">Contact</a>
@@ -29,8 +29,7 @@
     {% endblock %}
         
     {% block scripts %}
-        <script src="{{ url_for('static', filename='js/jquery.min.js') }}" defer></script>
-        <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}" defer></script>    
+        <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>    
         <script src="{{ url_for('static', filename='js/topnavbar.js') }}" defer></script>
     {% endblock %}
 </section>

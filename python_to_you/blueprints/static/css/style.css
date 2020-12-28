@@ -54,13 +54,14 @@ body {
 .topnav a:hover {
   background-color: rgba(221, 221, 221, 0.993);
   color: rgba(51, 50, 50, 0.911);
+  border-radius: .8rem;
 }
 
 .topnav .icon {
   display: none;
 }
 
-.hamburger_icon {
+.topnav .icon .hamburger_icon {
   width: 1.7rem;
   height: 1.7rem;
 }

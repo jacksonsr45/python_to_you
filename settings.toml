@@ -3,6 +3,8 @@ SQLALCHEMY_DATABASE_URI = 'mysql:///test.db'
 TITLE = "Python To You"
 SECRET_KEY = "jadkfbsdkjbfbh"
 
+BASE_URL = 'http://localhost:5000'
+
 EXTENSIONS = [
     # Load all external dependencies for this project
     "python_to_you.extensions.database",
@@ -10,7 +12,8 @@ EXTENSIONS = [
     # Load all internal dependencies for this project 
     "python_to_you.blueprints.web",
     "python_to_you.blueprints.api",
-    "python_to_you.blueprints.auth"
+    "python_to_you.blueprints.auth",
+    "python_to_you.blueprints.menu_items.header_menu"
 ]
 
 

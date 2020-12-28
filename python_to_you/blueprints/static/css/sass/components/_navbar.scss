@@ -16,6 +16,10 @@
         color: $color-header-menu-hover;
         border-radius: .8rem;
     }
+    .logo_nav:hover {
+        background-color: $color-header-menu-hover;
+        color: $color-header-menu-hover;
+    }
     .icon {
         display: none;
         .hamburger_icon {

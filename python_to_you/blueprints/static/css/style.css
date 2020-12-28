@@ -29,14 +29,14 @@ a {
 }
 
 body {
-  background-color: #C4BCF8;
+  background-color: #dfdee2f1;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .topnav {
-  background-color: #C4BCF8;
+  background-color: #dfdee2f1;
   overflow: hidden;
 }
 
@@ -52,9 +52,14 @@ body {
 }
 
 .topnav a:hover {
-  background-color: rgba(221, 221, 221, 0.993);
-  color: rgba(51, 50, 50, 0.911);
+  background-color: rgba(109, 108, 108, 0.932);
+  color: rgba(255, 255, 255, 0.938);
   border-radius: .8rem;
+}
+
+.topnav .logo_nav:hover {
+  background-color: rgba(255, 255, 255, 0.938);
+  color: rgba(255, 255, 255, 0.938);
 }
 
 .topnav .icon {

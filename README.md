@@ -1,22 +1,39 @@
-run app -> flask run
+# Python To You 
+### This is simple project in Python with Flask 
 
-run behave -> behave tests/behavior/features/ -D debug=True
+# Command Line RunServer
+    python manage.py runserver
 
-run testes -> python -m unittest discover tests/ -v
 
-run coverage -> coverage run --source=python_to_you -m unittest discover tests/ -v
+# Command Line exec Tests
 
-show report coverage -> coverage report
+run behave:
+    
+    behave tests/behavior/features/ -D debug=True
 
-show report coverage html -> coverage html
+run testes:
+    
+    python -m unittest discover tests/ -v
 
+run tests with coverage:
+    
+    coverage run --source=python_to_you -m unittest discover tests/ -v
+
+show report coverage: 
+    
+    coverage report
+
+show report coverage html:
+    
+    coverage html
+
+# WebPage from generate .gitignore
 generate gitignore -> https://www.toptal.com/developers/gitignore
 
 
-db init -> flask db init
+# Commands Line DB
 
-db migrate -> flask db migrate -m "Commit migrate."
-
-db apply migrate -> flask db upgrade
-
-flask db --help
+    python manage.py db init
+    python manage.py db migrate
+    python manage.py db upgrade
+    python manage.py db --help

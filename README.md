@@ -17,7 +17,7 @@ run testes:
 
 run tests with coverage:
     
-    python manage.py coverage_run
+    python manage.py coverage
 
 show report coverage: 
     

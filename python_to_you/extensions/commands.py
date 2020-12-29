@@ -1,3 +1,4 @@
+import os
 from flask_script import Manager, Command
 from flask import Flask
 from dynaconf import FlaskDynaconf
@@ -16,9 +17,35 @@ manager = Manager(_app)
 
 configuration.load_extensions(_app)
 
+
 @manager.command
-def create_app():
-    _app.run(debug=True, load_dotenv=True)
+def runserver():
+    _app.run(load_dotenv=True)
+
+
+@manager.command
+def unittest():
+    os.system("python -m unittest discover tests/ -v")
+
+
+@manager.command
+def behave():
+    os.system("behave tests/behavior/features/ -D debug=True")
+
+
+@manager.command
+def coverage():
+    os.system("coverage run --source=python_to_you -m unittest discover tests/ -v")
+
+
+@manager.command
+def coverage_report():
+    os.system("coverage report")
+
+
+@manager.command
+def coverage_html():
+    os.system("coverage html")
+
 
 manager.add_command('db', MigrateCommand)
-manager.add_command('runserver', create_app())

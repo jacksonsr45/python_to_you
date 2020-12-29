@@ -21,7 +21,11 @@ EXTENSIONS = [
     "python_to_you.blueprints.menu_items.footer_menu"
 
 ]
+SQLALCHEMY_TRACK_MODIFICATIONS = false
 
+[development]
+debug = true
 
 [production]
+debug = false
 SQLALCHEMY_DATABASE_URI = 'mysql+pymysql:///test.db'

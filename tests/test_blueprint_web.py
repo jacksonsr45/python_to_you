@@ -1,7 +1,7 @@
 from flask.app import Flask
 from flask import render_template
 from tests.flask_base_test_case import FlaskBaseTestCase, FlaskBaseTestCaseCreateApp
-from python_to_you.blueprints import web
+from python_to_you.blueprints.routes import web
 
 
 class TestBluePrintWeb(FlaskBaseTestCase):

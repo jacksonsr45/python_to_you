@@ -1,6 +1,8 @@
-<!doctype html>
-
-<html lang="pt-br">
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="pt-br" class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="pt-br" class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="pt-br" class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="pt-br" class="no-js"><!--<![endif]-->
     <head>
         {% block head %}
             <meta charset="utf-8">
@@ -32,10 +34,6 @@
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
             <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
-            <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-            <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-            <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-            <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
         {% endblock %}
     </head>
     <body>        
@@ -63,9 +61,14 @@
         <section class="content">
             <div class="default_content_pages">
                 {% block sidebar_left %}
-                    <aside class="sidebar_left">
-            
-                    </aside>
+                    {% if config.SIDEBAR_LEFT %}
+                        <aside class="sidebar_left">
+                            {% for menu_sidebar_left in config.SIDEBAR_LEFT %}
+                                {{menu_sidebar_left}}
+                            {% endfor %}
+                        </aside>
+                    {% endif %}
+
                 {% endblock %}
             
                 {% block content %}
@@ -73,9 +76,13 @@
                 {% endblock %}
             
                 {% block sidebar_right %}
-                    <aside class="sidebar_right">
-            
-                    </aside>
+                    {% if config.SIDEBAR_RIGHT %}
+                        <aside class="sidebar_right">
+                            {% for menu_sidebar_left in config.SIDEBAR_RIGHT %}
+                                {{menu_sidebar_left}}
+                            {% endfor %}
+                        </aside>
+                    {% endif %}
                 {% endblock %}
             </div>
 

@@ -1,6 +1,6 @@
 from flask.app import Flask
 from flask import render_template
-from tests.flask_base_test_case import FlaskBaseTestCase
+from tests.flask_base_test_case import FlaskBaseTestCase, FlaskBaseTestCaseCreateApp
 from python_to_you.blueprints import web
 
 
@@ -19,10 +19,11 @@ class TestBluePrintWeb(FlaskBaseTestCase):
             'index do not has a call!'
         )
 
+
+class TestBluePrintWebRenderTemplate(FlaskBaseTestCaseCreateApp):
     def test_if_index_return_render_template(self):
-        test = web.index()
         self.assertEqual(
-            test,
-            render_template("index.html", title="Home"),
+            web.index(),
+            render_template("index.html"),
             'Do not has return a render template valid!'
         )

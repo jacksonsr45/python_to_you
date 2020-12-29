@@ -1,10 +1,12 @@
 from typing import NoReturn
 from flask_sqlalchemy import SQLAlchemy
 
+
 ##
 # Create instance SQLAlchemy in var db
 # #
 db = SQLAlchemy()
+
 
 ##
 # Init Database with SQLAlchemy

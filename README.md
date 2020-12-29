@@ -11,3 +11,12 @@ show report coverage -> coverage report
 show report coverage html -> coverage html
 
 generate gitignore -> https://www.toptal.com/developers/gitignore
+
+
+db init -> flask db init
+
+db migrate -> flask db migrate -m "Commit migrate."
+
+db apply migrate -> flask db upgrade
+
+flask db --help

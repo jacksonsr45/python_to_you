@@ -1,5 +1,5 @@
 [default]
-SQLALCHEMY_DATABASE_URI = 'mysql:///test.db'
+SQLALCHEMY_DATABASE_URI = 'sqlite:///test.db'
 TITLE = "Python To You"
 SECRET_KEY = "jadkfbsdkjbfbh"
 
@@ -8,14 +8,20 @@ BASE_URL = 'http://localhost:5000'
 EXTENSIONS = [
     # Load all external dependencies for this project
     "python_to_you.extensions.database",
+    "python_to_you.extensions.migrate",
+    "python_to_you.extensions.marshmallow",
 
     # Load all internal dependencies for this project 
     "python_to_you.blueprints.web",
     "python_to_you.blueprints.api",
     "python_to_you.blueprints.auth",
-    "python_to_you.blueprints.menu_items.header_menu"
+    "python_to_you.blueprints.menu_items.header_menu",
+    "python_to_you.blueprints.menu_items.sidebar_left_menu",
+    "python_to_you.blueprints.menu_items.sidebar_right_menu",
+    "python_to_you.blueprints.menu_items.footer_menu"
+
 ]
 
 
 [production]
-SQLALCHEMY_DATABASE_URI = 'mysql:///test.db'
+SQLALCHEMY_DATABASE_URI = 'mysql+pymysql:///test.db'

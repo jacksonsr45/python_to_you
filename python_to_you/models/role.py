@@ -6,7 +6,7 @@ from sqlalchemy_serializer import SerializerMixin
 class Role(db.Model, SerializerMixin):
     __tablename__ = 'roles'
     id = db.Column(db.Integer, primary_key=True)
-    user_id = db.Column(db.ForeignKey('users.id'))
+    user_id = db.Column(db.ForeignKey('users.id', ondelete="CASCADE"))
     is_admin = db.Column(db.Boolean(255))
     created_at = db.Column(db.DateTime(), default=datetime.datetime.utcnow)
     updated_at = db.Column(db.DateTime())

@@ -6,7 +6,7 @@ from sqlalchemy_serializer import SerializerMixin
 class Groups(db.Model, SerializerMixin):
     __tablename__ = 'groups'
     id = db.Column(db.Integer, primary_key=True)
-    user_id = db.Column(db.ForeignKey('users.id'))
+    user_id = db.Column(db.ForeignKey('users.id', ondelete="CASCADE"))
     create_post = db.Column(db.Boolean(),default=False)
     edit_post = db.Column(db.Boolean(),default=False)
     update_post = db.Column(db.Boolean(),default=False)
@@ -16,6 +16,5 @@ class Groups(db.Model, SerializerMixin):
     block_post = db.Column(db.Boolean(),default=False)
     title = db.Column(db.String(255))
     description = db.Column(db.Text())
-    social_media = db.Column(db.String(255))
     created_at = db.Column(db.DateTime(), default=datetime.datetime.utcnow)
     updated_at = db.Column(db.DateTime())

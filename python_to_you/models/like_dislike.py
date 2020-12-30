@@ -6,8 +6,8 @@ from sqlalchemy_serializer import SerializerMixin
 class LikeDislike(db.Model, SerializerMixin):
     __tablename__ = 'likes_dislikes'
     id = db.Column(db.Integer, primary_key=True)
-    profile_id = db.Column(db.ForeignKey('profiles.id'))
-    post_id = db.Column(db.ForeignKey('posts.id'))
+    profile_id = db.Column(db.ForeignKey('profiles.id', ondelete="CASCADE"))
+    post_id = db.Column(db.ForeignKey('posts.id', ondelete="CASCADE"))
     select_like = db.Column(db.Enum("like", "deslike", "null"))
     created_at = db.Column(db.DateTime(), default=datetime.datetime.utcnow)
     updated_at = db.Column(db.DateTime())

@@ -17,7 +17,7 @@ class Partner(db.Model, SerializerMixin):
 class PartnerImage(db.Model, SerializerMixin):
     __tablename__ = 'partners_images'
     id = db.Column(db.Integer, primary_key=True)
-    partner_id = db.Column(db.ForeignKey('partners.id'))
+    partner_id = db.Column(db.ForeignKey('partners.id', ondelete="CASCADE"))
     title = db.Column(db.String(255))
     path = db.Column(db.String(255))
     created_at = db.Column(db.DateTime(), default=datetime.datetime.utcnow)

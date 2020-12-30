@@ -147,5 +147,6 @@ dmypy.json
 .vscode
 
 */test.db
+*/test.db-journal
 
 # End of https://www.toptal.com/developers/gitignore/api/python
